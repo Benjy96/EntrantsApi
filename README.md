@@ -8,15 +8,13 @@
 - - Local: https://localhost:9002/Entrant
 - - Azure: https://entrantsapi.azurewebsites.net/Entrant
 
-There are example POSTMAN collections stored under Resources/, which you can import into your POSTMAN application to test the HTTP requests.
+If you can't be bothered with prerequisites and running locally, use https://entrantsapi.azurewebsites.net/ and the postman collections (pre-made example HTTP requests) I've put under Resources/
 
 # Prerequisites 
 
 - Visual Studio Code
 - C# for Visual Studio Code
 - .NET 5.0 SDK
-
-If you can't be bothered with prerequisites and running locally, use https://entrantsapi.azurewebsites.net/ and the postman collections under Resources/
 
 # Run locally
 
