@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "f607055b-b86c-4c2d-b627-f032f01d15a4",
+		"name": "Entrants Web API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST (Create) Entrant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Ben\",\n  \"lastName\": \"Dickey\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://entrantsapi.azurewebsites.net/Entrant",
+					"protocol": "https",
+					"host": [
+						"entrantsapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Entrant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST With Secret Attribute (Should NOT Add \"Secret\")",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Ben\",\n  \"lastName\": \"Dickey\",\n  \"secret\": \"Cats can understand English\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://entrantsapi.azurewebsites.net/Entrant",
+					"protocol": "https",
+					"host": [
+						"entrantsapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Entrant"
+					]
+				},
+				"description": "When you add this Entrant and then GET it afterwards, you should NOT see the Secret attribute."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT (Update) Entrant",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"firstName\": \"Joe\",\n    \"lastName\": \"Bloggs\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://entrantsapi.azurewebsites.net/Entrant/1",
+					"protocol": "https",
+					"host": [
+						"entrantsapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Entrant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Entrant 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://entrantsapi.azurewebsites.net/Entrant/1",
+					"protocol": "https",
+					"host": [
+						"entrantsapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Entrant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Entrants",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://entrantsapi.azurewebsites.net/Entrant",
+					"protocol": "https",
+					"host": [
+						"entrantsapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Entrant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Entrant 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://entrantsapi.azurewebsites.net/Entrant/1",
+					"protocol": "https",
+					"host": [
+						"entrantsapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"Entrant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
