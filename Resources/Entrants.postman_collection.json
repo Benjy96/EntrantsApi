@@ -69,7 +69,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": 5,\n    \"firstName\": \"Joe\",\n    \"lastName\": \"Bloggs\"\n}",
+					"raw": "{\n    \"id\": 1,\n    \"firstName\": \"Joe\",\n    \"lastName\": \"Bloggs\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -77,7 +77,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:9002/Entrant/5",
+					"raw": "https://localhost:9002/Entrant/1",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -85,7 +85,7 @@
 					"port": "9002",
 					"path": [
 						"Entrant",
-						"5"
+						"1"
 					]
 				}
 			},
