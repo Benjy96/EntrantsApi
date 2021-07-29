@@ -16,6 +16,8 @@ There are example POSTMAN collections stored under Resources/, which you can imp
 - C# for Visual Studio Code
 - .NET 5.0 SDK
 
+If you can't be bothered with prerequisites and running locally, use https://entrantsapi.azurewebsites.net/ and the postman collections under Resources/
+
 # Run locally
 
 - Shortcut to run the project in Visual Studio Code is Control + F5
