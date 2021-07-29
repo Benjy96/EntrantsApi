@@ -8,7 +8,7 @@
 - - Local: https://localhost:9002/Entrant
 - - Azure: https://entrantsapi.azurewebsites.net/Entrant
 
-If you can't be bothered with prerequisites and running locally, use https://entrantsapi.azurewebsites.net/ and the postman collections (pre-made example HTTP requests) I've put under Resources/
+If you can't be bothered with prerequisites and running locally, use https://entrantsapi.azurewebsites.net/Entrant and the postman collections (pre-made example HTTP requests) I've put under Resources/
 
 # Prerequisites 
 
